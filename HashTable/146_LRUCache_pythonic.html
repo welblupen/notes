@@ -1,0 +1,4117 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>LRU Cache Q146 · welblupen</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="welblupen">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="149_MaxPointsOnLine.html" />
+    
+    
+    <link rel="prev" href="128_LongestConsecutiveSequence.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Array/">
+            
+                <a href="../Array/">
+            
+                    
+                    数组:Array
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Array/26_RemoveDuplicatesFromSortedArray.html">
+            
+                <a href="../Array/26_RemoveDuplicatesFromSortedArray.html">
+            
+                    
+                    Remove Duplicates from Sorted Array Q26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Array/27_RemoveElement.html">
+            
+                <a href="../Array/27_RemoveElement.html">
+            
+                    
+                    Remove Element Q27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Array/31_NextPermutation.html">
+            
+                <a href="../Array/31_NextPermutation.html">
+            
+                    
+                    Next Permutation Q31
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Array/41_FirstMissingPositive.html">
+            
+                <a href="../Array/41_FirstMissingPositive.html">
+            
+                    
+                    First Missing Positive Q41
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Array/54_SpiralMatrix.html">
+            
+                <a href="../Array/54_SpiralMatrix.html">
+            
+                    
+                    Spiral Matrix Q54
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Array/56_MergeIntervals.html">
+            
+                <a href="../Array/56_MergeIntervals.html">
+            
+                    
+                    Merge Intervals Q56
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Array/57_InsertInterval.html">
+            
+                <a href="../Array/57_InsertInterval.html">
+            
+                    
+                    Insert Interval Q57
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Array/59_SpiralMatrixII.html">
+            
+                <a href="../Array/59_SpiralMatrixII.html">
+            
+                    
+                    Spiral Matrix II Q59
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../Array/73_SetMatrixZeroes.html">
+            
+                <a href="../Array/73_SetMatrixZeroes.html">
+            
+                    
+                    Set Matrix Zeroes Q73
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../Array/118_PascalTriangle.html">
+            
+                <a href="../Array/118_PascalTriangle.html">
+            
+                    
+                    Pascal's Triangle Q118
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../Array/119_PascalTriangleII.html">
+            
+                <a href="../Array/119_PascalTriangleII.html">
+            
+                    
+                    Pascal's Triangle II Q119
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../Array/164_MaximumGap.html">
+            
+                <a href="../Array/164_MaximumGap.html">
+            
+                    
+                    Maximum Gap Q164
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../Array/189_RotateArray.html">
+            
+                <a href="../Array/189_RotateArray.html">
+            
+                    
+                    Rotate Array Q189
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../Array/228_SummaryRanges.html">
+            
+                <a href="../Array/228_SummaryRanges.html">
+            
+                    
+                    Summary Ranges Q228
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../Array/283_MoveZeroes.html">
+            
+                <a href="../Array/283_MoveZeroes.html">
+            
+                    
+                    Move Zeroes Q283
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../Array/289_GameOfLife.html">
+            
+                <a href="../Array/289_GameOfLife.html">
+            
+                    
+                    Game of Life Q289
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../String/">
+            
+                <a href="../String/">
+            
+                    
+                    字符串:String
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../String/06_ZigZagConversion.html">
+            
+                <a href="../String/06_ZigZagConversion.html">
+            
+                    
+                    ZigZag Conversion Q06
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../String/08_StringtoInteger.html">
+            
+                <a href="../String/08_StringtoInteger.html">
+            
+                    
+                    String to Integer Q08
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../String/14_LongestCommonPrefix.html">
+            
+                <a href="../String/14_LongestCommonPrefix.html">
+            
+                    
+                    Longest Common Prefix Q14
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../String/17_LetterCombinationsPN.html">
+            
+                <a href="../String/17_LetterCombinationsPN.html">
+            
+                    
+                    Letter Combinations of a Phone Number Q17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../String/28_ImplementstrStr.html">
+            
+                <a href="../String/28_ImplementstrStr.html">
+            
+                    
+                    Implement strStr() Q28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../String/38_CountAndSay.html">
+            
+                <a href="../String/38_CountAndSay.html">
+            
+                    
+                    Count and Say Q38
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../String/58_LengthOfLastWord.html">
+            
+                <a href="../String/58_LengthOfLastWord.html">
+            
+                    
+                    Length of Last Word Q58
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../String/67_AddBinary.html">
+            
+                <a href="../String/67_AddBinary.html">
+            
+                    
+                    Add Binary Q67
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../String/68_TextJustification.html">
+            
+                <a href="../String/68_TextJustification.html">
+            
+                    
+                    Text Justification Q68
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../String/151_ReverseWordsInString.html">
+            
+                <a href="../String/151_ReverseWordsInString.html">
+            
+                    
+                    Reverse Words in a String Q151
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../String/165_CompareVersionNumbers.html">
+            
+                <a href="../String/165_CompareVersionNumbers.html">
+            
+                    
+                    Compare Version Numbers Q165
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="../String/344_ReverseString.html">
+            
+                <a href="../String/344_ReverseString.html">
+            
+                    
+                    Reverse String Q344
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../LinkedList/">
+            
+                <a href="../LinkedList/">
+            
+                    
+                    链表:Linked List
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../LinkedList/AddTwoNumbers.html">
+            
+                <a href="../LinkedList/AddTwoNumbers.html">
+            
+                    
+                    Add Two Numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../LinkedList/21_MergeTwoSortedLists.html">
+            
+                <a href="../LinkedList/21_MergeTwoSortedLists.html">
+            
+                    
+                    Merge Two Sorted Lists Q21
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../LinkedList/24_SwapNodesInPairs.html">
+            
+                <a href="../LinkedList/24_SwapNodesInPairs.html">
+            
+                    
+                    Swap Nodes in Pairs Q24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../LinkedList/25_ReverseNodesIn-k-Group.html">
+            
+                <a href="../LinkedList/25_ReverseNodesIn-k-Group.html">
+            
+                    
+                    Reverse Nodes in k-Group Q25
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../LinkedList/61_RotateList.html">
+            
+                <a href="../LinkedList/61_RotateList.html">
+            
+                    
+                    Rotate List Q61
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../LinkedList/76_MinimumWindowSubstring.html">
+            
+                <a href="../LinkedList/76_MinimumWindowSubstring.html">
+            
+                    
+                    Minimum Window Substring Q76
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../LinkedList/82_RemoveDuplicatesFromSortedListII.html">
+            
+                <a href="../LinkedList/82_RemoveDuplicatesFromSortedListII.html">
+            
+                    
+                    Remove Duplicates from Sorted List II Q82
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../LinkedList/83_RemoveDuplicatesFromSortedList.html">
+            
+                <a href="../LinkedList/83_RemoveDuplicatesFromSortedList.html">
+            
+                    
+                    Remove Duplicates from Sorted List Q83
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="../LinkedList/86_PartitionList.html">
+            
+                <a href="../LinkedList/86_PartitionList.html">
+            
+                    
+                    Partition List Q86
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.10" data-path="../LinkedList/92_ReverseLinkedListII.html">
+            
+                <a href="../LinkedList/92_ReverseLinkedListII.html">
+            
+                    
+                    Reverse Linked List II Q92
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.11" data-path="../LinkedList/138_CopyListWithRandomPointer.html">
+            
+                <a href="../LinkedList/138_CopyListWithRandomPointer.html">
+            
+                    
+                    Copy List with Random Pointer Q138
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.12" data-path="../LinkedList/143_ReorderList.html">
+            
+                <a href="../LinkedList/143_ReorderList.html">
+            
+                    
+                    Reorder List Q143
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.13" data-path="../LinkedList/147_InsertionSortList.html">
+            
+                <a href="../LinkedList/147_InsertionSortList.html">
+            
+                    
+                    Insertion Sort List Q147
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.14" data-path="../LinkedList/148_SortList.html">
+            
+                <a href="../LinkedList/148_SortList.html">
+            
+                    
+                    Sort List Q148
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.15" data-path="../LinkedList/160_IntersectionOfTwoLinkedLists.html">
+            
+                <a href="../LinkedList/160_IntersectionOfTwoLinkedLists.html">
+            
+                    
+                    Intersection of Two Linked Lists Q160
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.16" data-path="../LinkedList/203_RemoveLinkedListElements.html">
+            
+                <a href="../LinkedList/203_RemoveLinkedListElements.html">
+            
+                    
+                    Remove Linked List Elements Q203
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.17" data-path="../LinkedList/206_ReverseLinkedList.html">
+            
+                <a href="../LinkedList/206_ReverseLinkedList.html">
+            
+                    
+                    Reverse Linked List Q206
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.18" data-path="../LinkedList/234_PalindromeLinkedList.html">
+            
+                <a href="../LinkedList/234_PalindromeLinkedList.html">
+            
+                    
+                    Palindrome Linked List Q234
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.19" data-path="../LinkedList/237_DeleteNodeInLinkedList.html">
+            
+                <a href="../LinkedList/237_DeleteNodeInLinkedList.html">
+            
+                    
+                    Delete Node in a Linked List Q237
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.20" data-path="../LinkedList/328_OddEvenLinkedList.html">
+            
+                <a href="../LinkedList/328_OddEvenLinkedList.html">
+            
+                    
+                    Odd Even Linked List Q328
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../Tree/">
+            
+                <a href="../Tree/">
+            
+                    
+                    树:Tree
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../Tree/94_BinaryTreeInorderTraversal.html">
+            
+                <a href="../Tree/94_BinaryTreeInorderTraversal.html">
+            
+                    
+                    Binary Tree Inorder Traversa Q94
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../Tree/95_UniqueBinarySearchTreesII.html">
+            
+                <a href="../Tree/95_UniqueBinarySearchTreesII.html">
+            
+                    
+                    Unique Binary Search Trees II Q95
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../Tree/96_UniqueBinarySearchTrees.html">
+            
+                <a href="../Tree/96_UniqueBinarySearchTrees.html">
+            
+                    
+                    Unique Binary Search Trees Q96
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../Tree/99_RecoverBinarySearchTree.html">
+            
+                <a href="../Tree/99_RecoverBinarySearchTree.html">
+            
+                    
+                    Recover Binary Search Tree Q99
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../Tree/100_SameTree.html">
+            
+                <a href="../Tree/100_SameTree.html">
+            
+                    
+                    Same Tree Q100
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../Tree/105_ConstructBinaryTreePreorderInorder.html">
+            
+                <a href="../Tree/105_ConstructBinaryTreePreorderInorder.html">
+            
+                    
+                    Construct Binary Tree from Preorder and Inorder Traversal Q105
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="../Tree/108_ConvertSortedArrayToBinarySearchTree.html">
+            
+                <a href="../Tree/108_ConvertSortedArrayToBinarySearchTree.html">
+            
+                    
+                    Convert Sorted Array to Binary Search Tree Q108
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../Tree/110_BalancedBinaryTree.html">
+            
+                <a href="../Tree/110_BalancedBinaryTree.html">
+            
+                    
+                    Balanced Binary Tree Q110
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" data-path="../Tree/111_MinimumDepthofBinaryTree.html">
+            
+                <a href="../Tree/111_MinimumDepthofBinaryTree.html">
+            
+                    
+                    Minimum Depth of Binary Tree Q111
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="../Tree/112_PathSum.html">
+            
+                <a href="../Tree/112_PathSum.html">
+            
+                    
+                    Path Sum Q112
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.11" data-path="../Tree/113_PathSumII.html">
+            
+                <a href="../Tree/113_PathSumII.html">
+            
+                    
+                    Path Sum II Q113
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.12" data-path="../Tree/114_FlattenBinaryTreeToLinkedList.html">
+            
+                <a href="../Tree/114_FlattenBinaryTreeToLinkedList.html">
+            
+                    
+                    Flatten Binary Tree to Linked List Q114
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13" data-path="../Tree/116_PopulatingNextRightPointersInEachNode.html">
+            
+                <a href="../Tree/116_PopulatingNextRightPointersInEachNode.html">
+            
+                    
+                    Populating Next Right Pointers in Each Node Q116
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.14" data-path="../Tree/117_PopulatingNextRightPointersInEachNodeII.html">
+            
+                <a href="../Tree/117_PopulatingNextRightPointersInEachNodeII.html">
+            
+                    
+                    Populating Next Right Pointers in Each Node II Q117
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.15" data-path="../Tree/124_BinaryTreeMaximumPathSum.html">
+            
+                <a href="../Tree/124_BinaryTreeMaximumPathSum.html">
+            
+                    
+                    Binary Tree Maximum Path Sum Q124
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.16" data-path="../Tree/144_BinaryTreePreorderTraversal.html">
+            
+                <a href="../Tree/144_BinaryTreePreorderTraversal.html">
+            
+                    
+                    Binary Tree Preorder Traversal Q144
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.17" data-path="../Tree/173_BinarySearchTreeIterator.html">
+            
+                <a href="../Tree/173_BinarySearchTreeIterator.html">
+            
+                    
+                    Binary Search Tree Iterator Q173
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.18" data-path="../Tree/208_ImplementTrie.html">
+            
+                <a href="../Tree/208_ImplementTrie.html">
+            
+                    
+                    Implement Trie (Prefix Tree) Q208
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.19" data-path="../Tree/211_AddandSearchWord.html">
+            
+                <a href="../Tree/211_AddandSearchWord.html">
+            
+                    
+                    Add and Search Word Q211
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.20" data-path="../Tree/226_InvertBinaryTree.html">
+            
+                <a href="../Tree/226_InvertBinaryTree.html">
+            
+                    
+                    Invert Binary Tree Q226
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.21" data-path="../Tree/235_LowestCommonAncestorOfBinarySearchTree.html">
+            
+                <a href="../Tree/235_LowestCommonAncestorOfBinarySearchTree.html">
+            
+                    
+                    Lowest Common Ancestor of a Binary Search Tree Q235
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.22" data-path="../Tree/236_LowestCommonAncestorOfBinaryTree.html">
+            
+                <a href="../Tree/236_LowestCommonAncestorOfBinaryTree.html">
+            
+                    
+                    Lowest Common Ancestor of a Binary Tree Q236
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.23" data-path="../Tree/297_SerializeAndDeserializeBinaryTree.html">
+            
+                <a href="../Tree/297_SerializeAndDeserializeBinaryTree.html">
+            
+                    
+                    Serialize and Deserialize Binary Tree Q297
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.24" data-path="../Tree/331_VerifyPreorderSerializationOfBinaryTree.html">
+            
+                <a href="../Tree/331_VerifyPreorderSerializationOfBinaryTree.html">
+            
+                    
+                    Verify Preorder Serialization of a Binary Tree Q331
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    哈希表:Hash Table
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="01_TwoSum.html">
+            
+                <a href="01_TwoSum.html">
+            
+                    
+                    Two Sum Q01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="03_LongestSubstringWithoutRepeatingCharacters.html">
+            
+                <a href="03_LongestSubstringWithoutRepeatingCharacters.html">
+            
+                    
+                    Longest Substring Without Repeating Characters Q03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="36_ValidSudoku.html">
+            
+                <a href="36_ValidSudoku.html">
+            
+                    
+                    Valid Sudoku Q36
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="49_GroupAnagrams.html">
+            
+                <a href="49_GroupAnagrams.html">
+            
+                    
+                    Group Anagrams Q49
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="128_LongestConsecutiveSequence.html">
+            
+                <a href="128_LongestConsecutiveSequence.html">
+            
+                    
+                    Longest Consecutive Sequence Q128
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4.6" data-path="146_LRUCache_pythonic.html">
+            
+                <a href="146_LRUCache_pythonic.html">
+            
+                    
+                    LRU Cache Q146
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="149_MaxPointsOnLine.html">
+            
+                <a href="149_MaxPointsOnLine.html">
+            
+                    
+                    Max Points on a Line Q149
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="187_RepeatedDNASequences.html">
+            
+                <a href="187_RepeatedDNASequences.html">
+            
+                    
+                    Repeated DNA Sequences Q187
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.9" data-path="205_IsomorphicStrings.html">
+            
+                <a href="205_IsomorphicStrings.html">
+            
+                    
+                    Isomorphic Strings Q205
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.10" data-path="217_ContainsDuplicate.html">
+            
+                <a href="217_ContainsDuplicate.html">
+            
+                    
+                    Contains Duplicate Q217
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.11" data-path="../working/219_ContainsDuplicateII.html">
+            
+                <a href="../working/219_ContainsDuplicateII.html">
+            
+                    
+                    Contains Duplicate II Q219
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.12" data-path="242_ValidAnagram.html">
+            
+                <a href="242_ValidAnagram.html">
+            
+                    
+                    Valid Anagram Q242
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.13" data-path="../DepthFirstSearch/257_BinaryTreePaths.html">
+            
+                <a href="../DepthFirstSearch/257_BinaryTreePaths.html">
+            
+                    
+                    Binary Tree Paths Q257
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.14" data-path="274_H-Index.html">
+            
+                <a href="274_H-Index.html">
+            
+                    
+                    H-Index Q274
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.15" data-path="290_WordPattern.html">
+            
+                <a href="290_WordPattern.html">
+            
+                    
+                    Word Pattern Q290
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.16" data-path="299_BullsAndCows.html">
+            
+                <a href="299_BullsAndCows.html">
+            
+                    
+                    Bulls and Cows Q299
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.17" data-path="349_IntersectionOfTwoArrays.html">
+            
+                <a href="349_IntersectionOfTwoArrays.html">
+            
+                    
+                    Intersection of Two Arrays Q349
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.18" data-path="350_IntersectionOfTwoArraysII.html">
+            
+                <a href="350_IntersectionOfTwoArraysII.html">
+            
+                    
+                    Intersection of Two Arrays II Q350
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../Heap/">
+            
+                <a href="../Heap/">
+            
+                    
+                    堆:Heap
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../Heap/23_MergeKSortedLists.html">
+            
+                <a href="../Heap/23_MergeKSortedLists.html">
+            
+                    
+                    Merge k Sorted Lists Q23
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../Heap/295_FindMedianFromDataStream.html">
+            
+                <a href="../Heap/295_FindMedianFromDataStream.html">
+            
+                    
+                    Find Median from Data Stream Q295
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../Heap/347_TopKFrequentElements.html">
+            
+                <a href="../Heap/347_TopKFrequentElements.html">
+            
+                    
+                    Top K Frequent Elements Q347
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../BinarySearch/">
+            
+                <a href="../BinarySearch/">
+            
+                    
+                    二分查找:Binary Search
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../BinarySearch/4_MedianOfTwoSortedArrays.html">
+            
+                <a href="../BinarySearch/4_MedianOfTwoSortedArrays.html">
+            
+                    
+                    Median of Two Sorted Arrays Q4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="../BinarySearch/33_SearchInRotatedSortedArray.html">
+            
+                <a href="../BinarySearch/33_SearchInRotatedSortedArray.html">
+            
+                    
+                    Search in Rotated Sorted Array Q33
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="../BinarySearch/34_SearchForRange.html">
+            
+                <a href="../BinarySearch/34_SearchForRange.html">
+            
+                    
+                    Search for a Range Q34
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.4" data-path="../BinarySearch/69_Sqrt_x.html">
+            
+                <a href="../BinarySearch/69_Sqrt_x.html">
+            
+                    
+                    Sqrt(x) Q69
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.5" data-path="../BinarySearch/74_Search2DMatrix.html">
+            
+                <a href="../BinarySearch/74_Search2DMatrix.html">
+            
+                    
+                    Search a 2D Matrix Q74
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.6" data-path="../BinarySearch/81_SearchInRotatedSortedArrayII.html">
+            
+                <a href="../BinarySearch/81_SearchInRotatedSortedArrayII.html">
+            
+                    
+                    Search in Rotated Sorted Array II Q81
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.7" data-path="../BinarySearch/153_FindMinimumInRotatedSortedArray.html">
+            
+                <a href="../BinarySearch/153_FindMinimumInRotatedSortedArray.html">
+            
+                    
+                    Find Minimum in Rotated Sorted Array Q153
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.8" data-path="../BinarySearch/154_FindMinimumInRotatedSortedArrayII.html">
+            
+                <a href="../BinarySearch/154_FindMinimumInRotatedSortedArrayII.html">
+            
+                    
+                    Find Minimum in Rotated Sorted Array II Q154
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.9" data-path="../BinarySearch/162_FindPeakElement.html">
+            
+                <a href="../BinarySearch/162_FindPeakElement.html">
+            
+                    
+                    Find Peak Element Q162
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.10" data-path="../BinarySearch/222_CountCompleteTreeNodes.html">
+            
+                <a href="../BinarySearch/222_CountCompleteTreeNodes.html">
+            
+                    
+                    Count Complete Tree Nodes Q222
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.11" data-path="../working/230_KthSmallestElementInBST.html">
+            
+                <a href="../working/230_KthSmallestElementInBST.html">
+            
+                    
+                    Kth Smallest Element in a BST Q230
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.12" data-path="../BinarySearch/275_H-IndexII.html">
+            
+                <a href="../BinarySearch/275_H-IndexII.html">
+            
+                    
+                    H-Index II Q275
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.13" data-path="../BinarySearch/278_FirstBadVersion.html">
+            
+                <a href="../BinarySearch/278_FirstBadVersion.html">
+            
+                    
+                    First Bad Version Q278
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.14" data-path="../BinarySearch/367_ValidPerfectSquare.html">
+            
+                <a href="../BinarySearch/367_ValidPerfectSquare.html">
+            
+                    
+                    Valid Perfect Square Q367
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../DepthFirstSearch/">
+            
+                <a href="../DepthFirstSearch/">
+            
+                    
+                    深度优先遍历:Depth-first Search
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../DepthFirstSearch/98_ValidateBinarySearchTree.html">
+            
+                <a href="../DepthFirstSearch/98_ValidateBinarySearchTree.html">
+            
+                    
+                    Validate Binary Search Tree Q98
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../DepthFirstSearch/126_WordLadderII.html">
+            
+                <a href="../DepthFirstSearch/126_WordLadderII.html">
+            
+                    
+                    Word Ladder II Q126
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.3" data-path="../DepthFirstSearch/129_SumRootToLeafNumbers.html">
+            
+                <a href="../DepthFirstSearch/129_SumRootToLeafNumbers.html">
+            
+                    
+                    Sum Root to Leaf Numbers Q129
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.4" data-path="../DepthFirstSearch/140_WordBreakII.html">
+            
+                <a href="../DepthFirstSearch/140_WordBreakII.html">
+            
+                    
+                    Word Break II Q140
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.5" data-path="../DepthFirstSearch/200_NumberofIslands.html">
+            
+                <a href="../DepthFirstSearch/200_NumberofIslands.html">
+            
+                    
+                    Number of Islands Q200
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.6" data-path="../DepthFirstSearch/301_RemoveInvalidParentheses.html">
+            
+                <a href="../DepthFirstSearch/301_RemoveInvalidParentheses.html">
+            
+                    
+                    Remove Invalid Parentheses Q301
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.7" data-path="../DepthFirstSearch/306_AdditiveNumber.html">
+            
+                <a href="../DepthFirstSearch/306_AdditiveNumber.html">
+            
+                    
+                    Additive Number Q306
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../BreadthFirstSearch/">
+            
+                <a href="../BreadthFirstSearch/">
+            
+                    
+                    广度优先遍历:Breadth-first Search
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="../BreadthFirstSearch/102_BinaryTreeLevelOrderTraversal.html">
+            
+                <a href="../BreadthFirstSearch/102_BinaryTreeLevelOrderTraversal.html">
+            
+                    
+                    Binary Tree Level Order Traversal Q102
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.2" data-path="../BreadthFirstSearch/103_BinaryTreeZigzagLevelOrderTraversal.html">
+            
+                <a href="../BreadthFirstSearch/103_BinaryTreeZigzagLevelOrderTraversal.html">
+            
+                    
+                    Binary Tree Zigzag Level OrderTraversal Q103
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.3" data-path="../BreadthFirstSearch/104_MaximumDepthOfBinaryTree.html">
+            
+                <a href="../BreadthFirstSearch/104_MaximumDepthOfBinaryTree.html">
+            
+                    
+                    Maximum Depth Of BinaryTree Q104
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.4" data-path="../BreadthFirstSearch/107_BinaryTreeLevelOrderTraversalII.html">
+            
+                <a href="../BreadthFirstSearch/107_BinaryTreeLevelOrderTraversalII.html">
+            
+                    
+                    Binary Tree Level Order Traversal II Q107
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.5" data-path="../BreadthFirstSearch/126_WordLadderII.html">
+            
+                <a href="../BreadthFirstSearch/126_WordLadderII.html">
+            
+                    
+                    Word Ladder II Q126
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.6" data-path="../BreadthFirstSearch/127_WordLadder.html">
+            
+                <a href="../BreadthFirstSearch/127_WordLadder.html">
+            
+                    
+                    Word Ladder Q127
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.7" data-path="../BreadthFirstSearch/130_SurroundedRegions.html">
+            
+                <a href="../BreadthFirstSearch/130_SurroundedRegions.html">
+            
+                    
+                    Surrounded Regions Q130
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.8" data-path="../BreadthFirstSearch/199_BinaryTreeRightSideView.html">
+            
+                <a href="../BreadthFirstSearch/199_BinaryTreeRightSideView.html">
+            
+                    
+                    Binary Tree Right Side View Q199
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.9" data-path="../BreadthFirstSearch/310_MinimumHeightTrees.html">
+            
+                <a href="../BreadthFirstSearch/310_MinimumHeightTrees.html">
+            
+                    
+                    Minimum Height Trees Q310
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.10" data-path="../BreadthFirstSearch/322_CoinChange.html">
+            
+                <a href="../BreadthFirstSearch/322_CoinChange.html">
+            
+                    
+                    Coin Change Q322
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../Backtracking/">
+            
+                <a href="../Backtracking/">
+            
+                    
+                    回溯:Backtracking
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.1" data-path="../Backtracking/23_GenerateParentheses.html">
+            
+                <a href="../Backtracking/23_GenerateParentheses.html">
+            
+                    
+                    Generate Parentheses Q23
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.2" data-path="../Backtracking/39_CombinationSum.html">
+            
+                <a href="../Backtracking/39_CombinationSum.html">
+            
+                    
+                    Combination Sum Q39
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.3" data-path="../Backtracking/46_Permutations.html">
+            
+                <a href="../Backtracking/46_Permutations.html">
+            
+                    
+                    Permutations Q46
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.4" data-path="../Backtracking/47_PermutationsII.html">
+            
+                <a href="../Backtracking/47_PermutationsII.html">
+            
+                    
+                    Permutations II Q47
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.5" data-path="../Backtracking/51_NQueens.html">
+            
+                <a href="../Backtracking/51_NQueens.html">
+            
+                    
+                    N-Queens Q51
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.6" data-path="../Backtracking/52_NQueensII.html">
+            
+                <a href="../Backtracking/52_NQueensII.html">
+            
+                    
+                    N-Queens II Q52
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.7" data-path="../Backtracking/79_WordSearch.html">
+            
+                <a href="../Backtracking/79_WordSearch.html">
+            
+                    
+                    Word Search Q79
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.8" data-path="../Backtracking/90_SubsetsII.html">
+            
+                <a href="../Backtracking/90_SubsetsII.html">
+            
+                    
+                    Subsets II Q90
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.9" data-path="../Backtracking/93_RestoreIPAddresses.html">
+            
+                <a href="../Backtracking/93_RestoreIPAddresses.html">
+            
+                    
+                    Restore IP Addresses Q93
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.10" data-path="../Backtracking/131_PalindromePartitioning.html">
+            
+                <a href="../Backtracking/131_PalindromePartitioning.html">
+            
+                    
+                    Palindrome Partitioning Q131
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.11" data-path="../Backtracking/216_CombinationSumIII.html">
+            
+                <a href="../Backtracking/216_CombinationSumIII.html">
+            
+                    
+                    Combination Sum III Q216
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../Recursion/">
+            
+                <a href="../Recursion/">
+            
+                    
+                    递归:Recursion
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.10.1" data-path="../Recursion/60_[Permutation .html">
+            
+                <a href="../Recursion/60_[Permutation .html">
+            
+                    
+                    Permutation Sequence Q60
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.2" data-path="../Recursion/77_Combinations.html">
+            
+                <a href="../Recursion/77_Combinations.html">
+            
+                    
+                    Combinations Q77
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.3" data-path="../Recursion/89_GrayCode.html">
+            
+                <a href="../Recursion/89_GrayCode.html">
+            
+                    
+                    Gray Code Q89
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.4" data-path="../Recursion/101_SymmetricTree.html">
+            
+                <a href="../Recursion/101_SymmetricTree.html">
+            
+                    
+                    Symmetric Tree Q101
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../DynamicProgramming/">
+            
+                <a href="../DynamicProgramming/">
+            
+                    
+                    动态规划:Dynamic Programming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../DynamicProgramming/10_RegularExpressionMatching.html">
+            
+                <a href="../DynamicProgramming/10_RegularExpressionMatching.html">
+            
+                    
+                    Regular Expression Matching Q10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../DynamicProgramming/32_LongestValidParentheses.html">
+            
+                <a href="../DynamicProgramming/32_LongestValidParentheses.html">
+            
+                    
+                    Longest Valid Parentheses Q32
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../DynamicProgramming/44_WildcardMatching.html">
+            
+                <a href="../DynamicProgramming/44_WildcardMatching.html">
+            
+                    
+                    Wildcard Matching Q44
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../DynamicProgramming/53_MaximumSubarray.html">
+            
+                <a href="../DynamicProgramming/53_MaximumSubarray.html">
+            
+                    
+                    Maximum Subarray Q53
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../DynamicProgramming/62_UniquePaths.html">
+            
+                <a href="../DynamicProgramming/62_UniquePaths.html">
+            
+                    
+                    Unique Paths Q62
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../DynamicProgramming/63_UniquePathsII.html">
+            
+                <a href="../DynamicProgramming/63_UniquePathsII.html">
+            
+                    
+                    Unique Paths II Q63
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../DynamicProgramming/64_MinimumPathSum.html">
+            
+                <a href="../DynamicProgramming/64_MinimumPathSum.html">
+            
+                    
+                    Minimum Path Sum Q64
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../DynamicProgramming/70_ClimbingStairs.html">
+            
+                <a href="../DynamicProgramming/70_ClimbingStairs.html">
+            
+                    
+                    Climbing Stairs Q70
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.9" data-path="../DynamicProgramming/72_EditDistance.html">
+            
+                <a href="../DynamicProgramming/72_EditDistance.html">
+            
+                    
+                    Edit Distance Q72
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.10" data-path="../DynamicProgramming/87_ScrambleString.html">
+            
+                <a href="../DynamicProgramming/87_ScrambleString.html">
+            
+                    
+                    Scramble String Q87
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.11" data-path="../DynamicProgramming/91_DecodeWays.html">
+            
+                <a href="../DynamicProgramming/91_DecodeWays.html">
+            
+                    
+                    Decode Ways Q91
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.12" data-path="../DynamicProgramming/97_InterleavingString.html">
+            
+                <a href="../DynamicProgramming/97_InterleavingString.html">
+            
+                    
+                    Interleaving String Q97
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.13" data-path="../DynamicProgramming/115_DistinctSubsequences.html">
+            
+                <a href="../DynamicProgramming/115_DistinctSubsequences.html">
+            
+                    
+                    Distinct Subsequences Q115
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.14" data-path="../DynamicProgramming/120_Triangle.html">
+            
+                <a href="../DynamicProgramming/120_Triangle.html">
+            
+                    
+                    Triangle Q120
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.15" data-path="../DynamicProgramming/121_BestTimeToBuyAndSellStock.html">
+            
+                <a href="../DynamicProgramming/121_BestTimeToBuyAndSellStock.html">
+            
+                    
+                    Best Time to Buy and Sell Stock Q121
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.16" data-path="../DynamicProgramming/123_BestTimeToBuyAndSellStockIII.html">
+            
+                <a href="../DynamicProgramming/123_BestTimeToBuyAndSellStockIII.html">
+            
+                    
+                    Best Time to Buy and Sell Stock III Q123
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.17" data-path="../DynamicProgramming/132_PalindromePartitioningII.html">
+            
+                <a href="../DynamicProgramming/132_PalindromePartitioningII.html">
+            
+                    
+                    Palindrome Partitioning II Q132
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.18" data-path="../DynamicProgramming/135_Candy.html">
+            
+                <a href="../DynamicProgramming/135_Candy.html">
+            
+                    
+                    Candy Q135
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.19" data-path="../DynamicProgramming/139_WordBreak.html">
+            
+                <a href="../DynamicProgramming/139_WordBreak.html">
+            
+                    
+                    Word Break Q139
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.20" data-path="../working/152_MaximumProductSubarray.html">
+            
+                <a href="../working/152_MaximumProductSubarray.html">
+            
+                    
+                    Maximum Product Subarray Q152
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.21" data-path="../DynamicProgramming/174_DungeonGame.html">
+            
+                <a href="../DynamicProgramming/174_DungeonGame.html">
+            
+                    
+                    Dungeon Game Q174
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.22" data-path="../DynamicProgramming/188_BestTimeBuySellStockIV.html">
+            
+                <a href="../DynamicProgramming/188_BestTimeBuySellStockIV.html">
+            
+                    
+                    Best Time to Buy and Sell Stock IV Q188
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.23" data-path="../DynamicProgramming/198_HouseRobber.html">
+            
+                <a href="../DynamicProgramming/198_HouseRobber.html">
+            
+                    
+                    House Robber Q198
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.24" data-path="../DynamicProgramming/213_HouseRobberII.html">
+            
+                <a href="../DynamicProgramming/213_HouseRobberII.html">
+            
+                    
+                    House Robber II Q213
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.25" data-path="../DynamicProgramming/221_MaximalSquare.html">
+            
+                <a href="../DynamicProgramming/221_MaximalSquare.html">
+            
+                    
+                    Maximal Square Q221
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.26" data-path="../DynamicProgramming/264_UglyNumberII.html">
+            
+                <a href="../DynamicProgramming/264_UglyNumberII.html">
+            
+                    
+                    Ugly Number II Q264
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.27" data-path="../DynamicProgramming/279_PerfectSquares.html">
+            
+                <a href="../DynamicProgramming/279_PerfectSquares.html">
+            
+                    
+                    Perfect Squares Q279
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.28" data-path="../DynamicProgramming/303_RangeSumQueryImmutable.html">
+            
+                <a href="../DynamicProgramming/303_RangeSumQueryImmutable.html">
+            
+                    
+                    Range Sum Query - Immutable Q303
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.29" data-path="../DynamicProgramming/304_RangeSumQuery2DImmutable.html">
+            
+                <a href="../DynamicProgramming/304_RangeSumQuery2DImmutable.html">
+            
+                    
+                    Range Sum Query 2D - Immutable Q304
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.30" data-path="../DynamicProgramming/309_BestTimeBuySellStockWithCooldown.html">
+            
+                <a href="../DynamicProgramming/309_BestTimeBuySellStockWithCooldown.html">
+            
+                    
+                    Best Time to Buy and Sell Stock with Cooldown Q309
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.31" data-path="../DynamicProgramming/313_SuperUglyNumber.html">
+            
+                <a href="../DynamicProgramming/313_SuperUglyNumber.html">
+            
+                    
+                    Super Ugly Number Q313
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.32" data-path="../DynamicProgramming/337_HouseRobberIII.html">
+            
+                <a href="../DynamicProgramming/337_HouseRobberIII.html">
+            
+                    
+                    House Robber III Q337
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.33" data-path="../DynamicProgramming/368_LargestDivisibleSubset.html">
+            
+                <a href="../DynamicProgramming/368_LargestDivisibleSubset.html">
+            
+                    
+                    Largest Divisible Subset Q368
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.34" data-path="../DynamicProgramming/357_CountNumbersWithUniqueDigits.html">
+            
+                <a href="../DynamicProgramming/357_CountNumbersWithUniqueDigits.html">
+            
+                    
+                    Count Numbers with Unique Digits Q357
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../Greedy/">
+            
+                <a href="../Greedy/">
+            
+                    
+                    贪心:Greedy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../Greedy/45_JumpGameII.html">
+            
+                <a href="../Greedy/45_JumpGameII.html">
+            
+                    
+                    Jump Game II Q45
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../Greedy/55_JumpGame.html">
+            
+                <a href="../Greedy/55_JumpGame.html">
+            
+                    
+                    Jump Game Q55
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../Greedy/122_BestTimeToBuyAndSellStockII.html">
+            
+                <a href="../Greedy/122_BestTimeToBuyAndSellStockII.html">
+            
+                    
+                    Best Time to Buy and Sell Stock II Q122
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../Greedy/134_GasStation.html">
+            
+                <a href="../Greedy/134_GasStation.html">
+            
+                    
+                    Gas Station Q134
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="../Greedy/316_RemoveDuplicateLetters.html">
+            
+                <a href="../Greedy/316_RemoveDuplicateLetters.html">
+            
+                    
+                    Remove Duplicate Letters Q316
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="../Greedy/330_PatchingArray.html">
+            
+                <a href="../Greedy/330_PatchingArray.html">
+            
+                    
+                    Patching Array Q330
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../Stack/">
+            
+                <a href="../Stack/">
+            
+                    
+                    栈:Stack
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../Stack/20_ValidParentheses.html">
+            
+                <a href="../Stack/20_ValidParentheses.html">
+            
+                    
+                    Valid Parentheses Q20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../Stack/32_LongestValidParentheses.html">
+            
+                <a href="../Stack/32_LongestValidParentheses.html">
+            
+                    
+                    Longest Valid Parentheses Q32
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../Stack/71_SimplifyPath.html">
+            
+                <a href="../Stack/71_SimplifyPath.html">
+            
+                    
+                    Simplify Path Q71
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../Stack/84_LargestRectangleInHistogram.html">
+            
+                <a href="../Stack/84_LargestRectangleInHistogram.html">
+            
+                    
+                    Largest Rectangle in Histogram Q84
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="../Stack/85_MaximalRectangle.html">
+            
+                <a href="../Stack/85_MaximalRectangle.html">
+            
+                    
+                    Maximal Rectangle Q85
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.6" data-path="../Stack/94_BinaryTreeInorderTraversal.html">
+            
+                <a href="../Stack/94_BinaryTreeInorderTraversal.html">
+            
+                    
+                    Binary Tree Inorder Traversal Q94
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.7" data-path="../Stack/150_EvaluateReversePolishNotation.html">
+            
+                <a href="../Stack/150_EvaluateReversePolishNotation.html">
+            
+                    
+                    Evaluate Reverse Polish Notation Q150
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.8" data-path="../Stack/155_MinStack.html">
+            
+                <a href="../Stack/155_MinStack.html">
+            
+                    
+                    Min Stack Q155
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.9" data-path="../Stack/224_BasicCalculator.html">
+            
+                <a href="../Stack/224_BasicCalculator.html">
+            
+                    
+                    Basic Calculator Q224
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.10" data-path="../Stack/225_ImplementStackusingQueues.html">
+            
+                <a href="../Stack/225_ImplementStackusingQueues.html">
+            
+                    
+                    Implement Stack using Queues Q225
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.11" data-path="../Stack/227_BasicCalculatorII.html">
+            
+                <a href="../Stack/227_BasicCalculatorII.html">
+            
+                    
+                    Basic Calculator II Q227
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.12" data-path="../Stack/232_ImplementQueueUsingStacks.html">
+            
+                <a href="../Stack/232_ImplementQueueUsingStacks.html">
+            
+                    
+                    Implement Queue using Stacks Q232
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.13" data-path="../Stack/316_RemoveDuplicateLetters.html">
+            
+                <a href="../Stack/316_RemoveDuplicateLetters.html">
+            
+                    
+                    Remove Duplicate Letters Q316
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.14" data-path="../Stack/341_FlattenNestedListIterator.html">
+            
+                <a href="../Stack/341_FlattenNestedListIterator.html">
+            
+                    
+                    Flatten Nested List Iterator Q341
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../TwoPointers/">
+            
+                <a href="../TwoPointers/">
+            
+                    
+                    Two Pointers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../TwoPointers/11_ContainerWithMostWater.html">
+            
+                <a href="../TwoPointers/11_ContainerWithMostWater.html">
+            
+                    
+                    Container With Most Water Q11
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="../TwoPointers/15_3Sum.html">
+            
+                <a href="../TwoPointers/15_3Sum.html">
+            
+                    
+                    3Sum Q15
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="../TwoPointers/16_3SumClosest.html">
+            
+                <a href="../TwoPointers/16_3SumClosest.html">
+            
+                    
+                    3Sum Closest Q16
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="../TwoPointers/18_4Sum.html">
+            
+                <a href="../TwoPointers/18_4Sum.html">
+            
+                    
+                    4Sum Q18
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.5" data-path="../TwoPointers/19_RemoveNthNodeFromEndOfList.html">
+            
+                <a href="../TwoPointers/19_RemoveNthNodeFromEndOfList.html">
+            
+                    
+                    Remove Nth Node From End of List Q19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.6" data-path="../TwoPointers/42_TrappingRainWater.html">
+            
+                <a href="../TwoPointers/42_TrappingRainWater.html">
+            
+                    
+                    Trapping Rain Water Q42
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.7" data-path="../TwoPointers/75_SortColors.html">
+            
+                <a href="../TwoPointers/75_SortColors.html">
+            
+                    
+                    Sort Colors Q75
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.8" data-path="../TwoPointers/80_RemoveDuplicatesArrayII.html">
+            
+                <a href="../TwoPointers/80_RemoveDuplicatesArrayII.html">
+            
+                    
+                    Remove Duplicates from Sorted Array II Q80
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.9" data-path="../TwoPointers/88_MergeSortedArray.html">
+            
+                <a href="../TwoPointers/88_MergeSortedArray.html">
+            
+                    
+                    Merge Sorted Array Q88
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.10" data-path="../TwoPointers/125_ValidPalindrome.html">
+            
+                <a href="../TwoPointers/125_ValidPalindrome.html">
+            
+                    
+                    Valid Palindrome Q125
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.11" data-path="../TwoPointers/141_LinkedListCycle.html">
+            
+                <a href="../TwoPointers/141_LinkedListCycle.html">
+            
+                    
+                    Linked List Cycle Q141
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.12" data-path="../TwoPointers/142_LinkedListCycleII.html">
+            
+                <a href="../TwoPointers/142_LinkedListCycleII.html">
+            
+                    
+                    Linked List Cycle II Q142
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.13" data-path="../TwoPointers/209_MinimumSizeSubarraySum.html">
+            
+                <a href="../TwoPointers/209_MinimumSizeSubarraySum.html">
+            
+                    
+                    Minimum Size Subarray Sum Q209
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.14" data-path="../TwoPointers/283_MoveZeroes.html">
+            
+                <a href="../TwoPointers/283_MoveZeroes.html">
+            
+                    
+                    Move Zeroes Q283
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.15" data-path="../TwoPointers/287_FindTheDuplicateNumber.html">
+            
+                <a href="../TwoPointers/287_FindTheDuplicateNumber.html">
+            
+                    
+                    Find the Duplicate Number Q287
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.16" data-path="../TwoPointers/345_ReverseVowelsOfString.html">
+            
+                <a href="../TwoPointers/345_ReverseVowelsOfString.html">
+            
+                    
+                    Reverse Vowels of a String Q345
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Math/">
+            
+                <a href="../Math/">
+            
+                    
+                    数学公式:Math
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../Math/07_ReverseInteger.html">
+            
+                <a href="../Math/07_ReverseInteger.html">
+            
+                    
+                    Reverse Integer Q07
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../Math/09_PalindromeNumber.html">
+            
+                <a href="../Math/09_PalindromeNumber.html">
+            
+                    
+                    Palindrome Number Q09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../Math/12_IntegertoRoman.html">
+            
+                <a href="../Math/12_IntegertoRoman.html">
+            
+                    
+                    Integer to Roman Q12
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../Math/13_RomantoInteger.html">
+            
+                <a href="../Math/13_RomantoInteger.html">
+            
+                    
+                    Roman to Integer Q13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../Math/48_RotateImage.html">
+            
+                <a href="../Math/48_RotateImage.html">
+            
+                    
+                    Rotate Image Q48
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../Math/43_MultiplyStrings.html">
+            
+                <a href="../Math/43_MultiplyStrings.html">
+            
+                    
+                    Multiply Strings Q43
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../Math/50_Pow.html">
+            
+                <a href="../Math/50_Pow.html">
+            
+                    
+                    Pow(x, n) Q50
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../Math/60_PermutationSequence.html">
+            
+                <a href="../Math/60_PermutationSequence.html">
+            
+                    
+                    Permutation Sequence Q60
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../Math/66_PlusOne.html">
+            
+                <a href="../Math/66_PlusOne.html">
+            
+                    
+                    Plus One Q66
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../Math/166_FractionToRecurringDecimal.html">
+            
+                <a href="../Math/166_FractionToRecurringDecimal.html">
+            
+                    
+                    Fraction to Recurring Decimal Q166
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="../Math/168_ExcelSheetColumnTitle.html">
+            
+                <a href="../Math/168_ExcelSheetColumnTitle.html">
+            
+                    
+                    Excel Sheet Column Title Q168
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.12" data-path="../Math/171_ExcelSheetColumnNumber.html">
+            
+                <a href="../Math/171_ExcelSheetColumnNumber.html">
+            
+                    
+                    Excel Sheet Column Number Q171
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.13" data-path="../Math/172_FactorialTrailingZeroes.html">
+            
+                <a href="../Math/172_FactorialTrailingZeroes.html">
+            
+                    
+                    Factorial Trailing Zeroes Q172
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.14" data-path="../Math/179_LargestNumber.html">
+            
+                <a href="../Math/179_LargestNumber.html">
+            
+                    
+                    Largest Number Q179
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.15" data-path="../Math/202_HappyNumber.html">
+            
+                <a href="../Math/202_HappyNumber.html">
+            
+                    
+                    Happy Number Q202
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.16" data-path="../Math/204_CountPrimes.html">
+            
+                <a href="../Math/204_CountPrimes.html">
+            
+                    
+                    Count Primes Q204
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.17" data-path="../Math/223_RectangleArea.html">
+            
+                <a href="../Math/223_RectangleArea.html">
+            
+                    
+                    Rectangle Area Q223
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.18" data-path="../Math/233_NumberOfDigitOne.html">
+            
+                <a href="../Math/233_NumberOfDigitOne.html">
+            
+                    
+                    Number of Digit One Q233
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.19" data-path="../Math/238_ProductOfArrayExceptSelf.html">
+            
+                <a href="../Math/238_ProductOfArrayExceptSelf.html">
+            
+                    
+                    Product of Array Except Self Q238
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.20" data-path="../Math/258_AddDigits.html">
+            
+                <a href="../Math/258_AddDigits.html">
+            
+                    
+                    Add Digits Q258
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.21" data-path="../Math/263_UglyNumber.html">
+            
+                <a href="../Math/263_UglyNumber.html">
+            
+                    
+                    Ugly Number Q263
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.22" data-path="../Math/273_IntegerToEnglishWords.html">
+            
+                <a href="../Math/273_IntegerToEnglishWords.html">
+            
+                    
+                    Integer to English Words Q273
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.23" data-path="../Math/292_NimGame.html">
+            
+                <a href="../Math/292_NimGame.html">
+            
+                    
+                    Nim Game Q292
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.24" data-path="../Math/326_PowerOfThree.html">
+            
+                <a href="../Math/326_PowerOfThree.html">
+            
+                    
+                    Power of Three Q326
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.25" data-path="../Math/319_BulbSwitcher.html">
+            
+                <a href="../Math/319_BulbSwitcher.html">
+            
+                    
+                    Bulb Switcher Q319
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.26" data-path="../Math/335_SelfCrossing.html">
+            
+                <a href="../Math/335_SelfCrossing.html">
+            
+                    
+                    Self Crossing Q335
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.27" data-path="../Math/343_IntegerBreak.html">
+            
+                <a href="../Math/343_IntegerBreak.html">
+            
+                    
+                    Integer Break Q343
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../BitManipulation/">
+            
+                <a href="../BitManipulation/">
+            
+                    
+                    位运算:Bit Manipulation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../BitManipulation/29_DivideTwoIntegers.html">
+            
+                <a href="../BitManipulation/29_DivideTwoIntegers.html">
+            
+                    
+                    Divide Two Integers Q29
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../BitManipulation/78_Subsets.html">
+            
+                <a href="../BitManipulation/78_Subsets.html">
+            
+                    
+                    Subsets Q78
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../BitManipulation/136_SingleNumber.html">
+            
+                <a href="../BitManipulation/136_SingleNumber.html">
+            
+                    
+                    Single Number Q136
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../BitManipulation/137_SingleNumberII.html">
+            
+                <a href="../BitManipulation/137_SingleNumberII.html">
+            
+                    
+                    Single Number II Q137
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="../BitManipulation/169_MajorityElement.html">
+            
+                <a href="../BitManipulation/169_MajorityElement.html">
+            
+                    
+                    Majority Element Q169
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.6" data-path="../BitManipulation/190_ReverseBits.html">
+            
+                <a href="../BitManipulation/190_ReverseBits.html">
+            
+                    
+                    Reverse Bits Q190
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.7" data-path="../BitManipulation/191_NumberOf1Bits.html">
+            
+                <a href="../BitManipulation/191_NumberOf1Bits.html">
+            
+                    
+                    Number of 1 Bits Q191
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.8" data-path="../BitManipulation/201_BitwiseANDofNumbersRange.html">
+            
+                <a href="../BitManipulation/201_BitwiseANDofNumbersRange.html">
+            
+                    
+                    Bitwise AND of Numbers Range Q201
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.9" data-path="../BitManipulation/231_PowerOfTwo.html">
+            
+                <a href="../BitManipulation/231_PowerOfTwo.html">
+            
+                    
+                    Power of Two Q231
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.10" data-path="../BitManipulation/260_SingleNumberIII.html">
+            
+                <a href="../BitManipulation/260_SingleNumberIII.html">
+            
+                    
+                    Single Number III Q260
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.11" data-path="../BitManipulation/268_MissingNumber.html">
+            
+                <a href="../BitManipulation/268_MissingNumber.html">
+            
+                    
+                    Missing Number Q268
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.12" data-path="../BitManipulation/318_MaximumProductOfWordLengths.html">
+            
+                <a href="../BitManipulation/318_MaximumProductOfWordLengths.html">
+            
+                    
+                    Maximum Product of Word Lengths Q318
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.13" data-path="../BitManipulation/338_CountingBits.html">
+            
+                <a href="../BitManipulation/338_CountingBits.html">
+            
+                    
+                    Counting Bits Q338
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.14" data-path="../BitManipulation/371_SumOfTwoIntegers.html">
+            
+                <a href="../BitManipulation/371_SumOfTwoIntegers.html">
+            
+                    
+                    Sum of Two Integers Q371
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.15" data-path="../BitManipulation/342_PowerOfFour.html">
+            
+                <a href="../BitManipulation/342_PowerOfFour.html">
+            
+                    
+                    Power of Four Q342
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../Graph/">
+            
+                <a href="../Graph/">
+            
+                    
+                    图:Graph
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../Graph/133_CloneGraph.html">
+            
+                <a href="../Graph/133_CloneGraph.html">
+            
+                    
+                    Clone Graph Q133
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../Graph/207_CourseSchedule.html">
+            
+                <a href="../Graph/207_CourseSchedule.html">
+            
+                    
+                    Course Schedule Q207
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../Graph/210_CourseScheduleII.html">
+            
+                <a href="../Graph/210_CourseScheduleII.html">
+            
+                    
+                    Course Schedule II Q210
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../Combination/">
+            
+                <a href="../Combination/">
+            
+                    
+                    集合:Combination
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../Combination/30_SubstringWithConcatenationOfAllWords.html">
+            
+                <a href="../Combination/30_SubstringWithConcatenationOfAllWords.html">
+            
+                    
+                    Substring with Concatenation of All Words Q30
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../Combination/37_SudokuSolver.html">
+            
+                <a href="../Combination/37_SudokuSolver.html">
+            
+                    
+                    Sudoku Solver Q37
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3" data-path="../Combination/140_WordBreakII.html">
+            
+                <a href="../Combination/140_WordBreakII.html">
+            
+                    
+                    Word Break II Q140
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4" data-path="../Combination/146_LRUCache.html">
+            
+                <a href="../Combination/146_LRUCache.html">
+            
+                    
+                    LRU Cache Q146
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.5" data-path="../Combination/300_LongestIncreasingSubsequence.html">
+            
+                <a href="../Combination/300_LongestIncreasingSubsequence.html">
+            
+                    
+                    Longest Increasing Subsequence Q300
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.6" data-path="../Combination/324_WiggleSortII.html">
+            
+                <a href="../Combination/324_WiggleSortII.html">
+            
+                    
+                    Wiggle Sort II Q324
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.7" data-path="../Combination/329_LongestIncreasingPathInMatrix.html">
+            
+                <a href="../Combination/329_LongestIncreasingPathInMatrix.html">
+            
+                    
+                    Longest Increasing Path in a Matrix Q329
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.8" data-path="../Combination/355_DesignTwitter.html">
+            
+                <a href="../Combination/355_DesignTwitter.html">
+            
+                    
+                    Design Twitter Q355
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../Others/">
+            
+                <a href="../Others/">
+            
+                    
+                    其他:Others
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../Others/220_ContainsDuplicateIII.html">
+            
+                <a href="../Others/220_ContainsDuplicateIII.html">
+            
+                    
+                    Contains Duplicate III Q220
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="../Others/229_MajorityElementII.html">
+            
+                <a href="../Others/229_MajorityElementII.html">
+            
+                    
+                    Majority Element II Q229
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="../Others/239_SlidingWindowMaximum.html">
+            
+                <a href="../Others/239_SlidingWindowMaximum.html">
+            
+                    
+                    Sliding Window Maximum Q239
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.4" data-path="../Others/284_PeekingIterator.html">
+            
+                <a href="../Others/284_PeekingIterator.html">
+            
+                    
+                    Peeking Iterator Q284
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.5" data-path="../Others/307_RangeSumQueryMutable.html">
+            
+                <a href="../Others/307_RangeSumQueryMutable.html">
+            
+                    
+                    Range Sum Query - Mutable Q307
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >LRU Cache Q146</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="lru-cache-q146">LRU Cache Q146</h1>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="128_LongestConsecutiveSequence.html" class="navigation navigation-prev " aria-label="Previous page: Longest Consecutive Sequence Q128">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="149_MaxPointsOnLine.html" class="navigation navigation-next " aria-label="Next page: Max Points on a Line Q149">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"LRU Cache Q146","level":"2.4.6","depth":2,"next":{"title":"Max Points on a Line Q149","level":"2.4.7","depth":2,"path":"HashTable/149_MaxPointsOnLine.md","ref":"HashTable/149_MaxPointsOnLine.md","articles":[]},"previous":{"title":"Longest Consecutive Sequence Q128","level":"2.4.5","depth":2,"path":"HashTable/128_LongestConsecutiveSequence.md","ref":"HashTable/128_LongestConsecutiveSequence.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"expandable-chapters-small":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"welblupen","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"welblupen","language":"zh-hans","gitbook":"3.2.3","description":"welblupen的blog"},"file":{"path":"HashTable/146_LRUCache_pythonic.md","mtime":"2020-10-11T19:48:20.384Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-12T08:38:17.806Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
