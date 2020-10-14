@@ -1,0 +1,14 @@
+{
+    "title": "welblupen",
+    "author": "welblupen",
+    "description": "welblupen的blog",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "structure": {
+        "readme": "README.md"
+    },
+    "plugins": ["expandable-chapters-small"],
+    "pluginsConfig": {
+        "expandable-chapters-small":{}
+    }
+}
