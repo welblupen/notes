@@ -1,2 +1,0 @@
-# Climbing Stairs Q70
-

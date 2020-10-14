@@ -1,2 +1,0 @@
-# Peeking Iterator Q284
-

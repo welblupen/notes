@@ -1,2 +1,0 @@
-# Min Stack Q155
-

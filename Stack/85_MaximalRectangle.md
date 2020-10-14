@@ -1,2 +1,0 @@
-# Maximal Rectangle Q85
-

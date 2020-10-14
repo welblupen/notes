@@ -1,2 +1,0 @@
-# Sort Colors Q75
-

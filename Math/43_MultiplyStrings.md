@@ -1,2 +1,0 @@
-# Multiply Strings Q43
-

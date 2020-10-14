@@ -1,2 +1,0 @@
-# Rotate List Q61
-

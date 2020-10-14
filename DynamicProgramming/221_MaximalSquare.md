@@ -1,2 +1,0 @@
-# Maximal Square Q221
-

@@ -1,2 +1,0 @@
-# Ugly Number Q263
-

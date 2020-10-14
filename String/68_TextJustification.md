@@ -1,2 +1,0 @@
-# Text Justification Q68
-

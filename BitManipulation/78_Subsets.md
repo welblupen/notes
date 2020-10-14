@@ -1,2 +1,0 @@
-# Subsets Q78
-

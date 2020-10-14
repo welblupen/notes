@@ -1,2 +1,0 @@
-# Same Tree Q100
-

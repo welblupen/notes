@@ -1,2 +1,0 @@
-# Counting Bits Q338
-

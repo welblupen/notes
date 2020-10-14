@@ -1,2 +1,0 @@
-# Palindrome Partitioning Q131
-

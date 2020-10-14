@@ -1,2 +1,0 @@
-# Triangle Q120
-

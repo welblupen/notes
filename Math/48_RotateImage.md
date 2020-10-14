@@ -1,2 +1,0 @@
-# Rotate Image Q48
-

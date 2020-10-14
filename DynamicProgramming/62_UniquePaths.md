@@ -1,2 +1,0 @@
-# Unique Paths Q62
-

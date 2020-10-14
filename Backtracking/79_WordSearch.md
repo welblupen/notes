@@ -1,2 +1,0 @@
-# Word Search Q79
-

@@ -1,2 +1,0 @@
-# Plus One Q66
-

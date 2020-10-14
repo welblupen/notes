@@ -1,2 +1,0 @@
-# Count Primes Q204
-

@@ -1,2 +1,0 @@
-# Reverse String Q344
-

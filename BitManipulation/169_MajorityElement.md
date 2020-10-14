@@ -1,2 +1,0 @@
-# Majority Element Q169
-

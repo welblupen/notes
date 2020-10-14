@@ -1,2 +1,0 @@
-# Populating Next Right Pointers in Each Node II Q117
-

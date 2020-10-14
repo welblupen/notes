@@ -1,2 +1,0 @@
-# Surrounded Regions Q130
-

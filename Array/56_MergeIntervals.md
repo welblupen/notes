@@ -1,2 +1,0 @@
-# Merge Intervals Q56
-

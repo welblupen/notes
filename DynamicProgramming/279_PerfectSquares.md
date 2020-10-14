@@ -1,2 +1,0 @@
-# Perfect Squares Q279
-

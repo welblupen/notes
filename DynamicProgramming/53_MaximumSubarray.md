@@ -1,2 +1,0 @@
-# Maximum Subarray Q53
-

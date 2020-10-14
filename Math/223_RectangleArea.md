@@ -1,2 +1,0 @@
-# Rectangle Area Q223
-

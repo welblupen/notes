@@ -1,2 +1,0 @@
-# Symmetric Tree Q101
-

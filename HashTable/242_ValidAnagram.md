@@ -1,2 +1,0 @@
-# Valid Anagram Q242
-

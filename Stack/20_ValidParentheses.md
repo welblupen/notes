@@ -1,2 +1,0 @@
-# Valid Parentheses Q20
-

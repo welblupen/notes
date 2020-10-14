@@ -1,2 +1,0 @@
-# Word Pattern Q290
-

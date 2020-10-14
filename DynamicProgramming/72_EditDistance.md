@@ -1,2 +1,0 @@
-# Edit Distance Q72
-

@@ -1,2 +1,0 @@
-# Scramble String Q87
-

@@ -1,2 +1,0 @@
-# Valid Palindrome Q125
-

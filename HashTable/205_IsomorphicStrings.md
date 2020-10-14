@@ -1,2 +1,0 @@
-# Isomorphic Strings Q205
-

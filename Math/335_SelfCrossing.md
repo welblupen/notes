@@ -1,2 +1,0 @@
-# Self Crossing Q335
-

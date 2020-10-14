@@ -1,2 +1,0 @@
-# Integer Break Q343
-

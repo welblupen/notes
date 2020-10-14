@@ -1,2 +1,0 @@
-# Reverse Integer Q07
-

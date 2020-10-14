@@ -1,2 +1,0 @@
-# Permutation Sequence Q60
-
